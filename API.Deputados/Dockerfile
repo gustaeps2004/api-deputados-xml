@@ -12,4 +12,4 @@ WORKDIR /app
 COPY --from=build /app/out ./
 ENV ASPNETCORE_ENVIRONMENT=Production
 EXPOSE 80
-ENTRYPOINT ["dotnet", "API.Deputados.dll"]
+ENTRYPOINT ["dotnet", "API.Deputados.dll"] 
