@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API.Deputados")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac1d763186a4b746612eca9afed93f1853b11b24")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c24967be3a136cfd241ef3845cbd0f132c46d415")]
 [assembly: System.Reflection.AssemblyProductAttribute("API.Deputados")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API.Deputados")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
