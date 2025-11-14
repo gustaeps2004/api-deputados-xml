@@ -18,16 +18,16 @@ jobs:
           dotnet-version: '8.0'
 
       - name: Restore dependencies
-        run: dotnet restore ApiDeputados/ApiDeputados.sln
+        run: dotnet restore Api.Deputados/Api.Deputados.sln
 
       - name: Build
-        run: dotnet build ApiDeputados/ApiDeputados.sln --configuration Release --no-restore
+        run: dotnet build Api.Deputados/Api.Deputados.sln --configuration Release --no-restore
 
       - name: Test
-        run: dotnet test ApiDeputados/ApiDeputados.sln --no-restore --verbosity normal
+        run: dotnet test Api.Deputados/Api.Deputados.sln --no-restore --verbosity normal
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/api.deputados:latest -f ApiDeputados/Dockerfile ApiDeputados
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/api.deputados:latest -f Api.Deputados/Dockerfile ApiDeputados
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
